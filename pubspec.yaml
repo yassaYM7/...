@@ -1,0 +1,86 @@
+name: electronics_store
+description: تطبيق متجر إلكترونيات مستوحى من تصميم متجر Apple.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # أيقونات وواجهة المستخدم
+  cupertino_icons: ^1.0.6
+  flutter_svg: ^2.0.9
+  cached_network_image: ^3.3.0
+  shimmer: ^3.0.0
+  carousel_slider: ^4.2.1
+  dots_indicator: ^3.0.0
+  
+  # إدارة الحالة
+  provider: ^6.1.1
+  
+  # التخزين المحلي
+  shared_preferences: ^2.2.2
+  sqflite: ^2.3.0
+  path: ^1.8.3
+  
+  # الشبكة والاتصال
+  http: ^1.1.0
+  connectivity_plus: ^5.0.1
+  
+  # المصادقة
+  local_auth: ^2.1.7
+  
+  # التنقل
+  go_router: ^12.1.1
+  
+  # المساعدة
+  intl: ^0.18.1
+  url_launcher: ^6.2.1
+  package_info_plus: ^4.2.0
+  device_info_plus: ^9.1.0
+  
+  # الرسوم المتحركة
+  lottie: ^2.7.0
+  flutter_animate: ^4.3.0
+  
+  # الخط
+  google_fonts: ^6.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  flutter_launcher_icons: ^0.13.1
+
+# إعدادات أيقونة التطبيق
+flutter_launcher_icons:
+  android: "ic_launcher"
+  ios: true
+  image_path: "assets/icon/app_icon.png"
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/icon/app_icon_foreground.png"
+
+flutter:
+  uses-material-design: true
+  
+  # الأصول
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/animations/
+    - assets/fonts/
+  
+  # الخطوط
+fonts:
+  - family: Cairo
+    fonts:
+      - asset: assets/fonts/Cairo/Cairo-Regular.ttf
+      - asset: assets/fonts/Cairo/Cairo-Medium.ttf
+        weight: 500
+      - asset: assets/fonts/Cairo/Cairo-SemiBold.ttf
+        weight: 600
+      - asset: assets/fonts/Cairo/Cairo-Bold.ttf
+        weight: 700
